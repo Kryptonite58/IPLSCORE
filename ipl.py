@@ -3,7 +3,7 @@ from PIL import ImageTk, Image
 import os
 from bs4 import BeautifulSoup
 import urllib.request
-score_page = 'http://static.cricinfo.com/rss/livescores.xml'    
+score_page = 'https://www.cricbuzz.com'    
 page = urllib.request.urlopen(score_page)
 soup = BeautifulSoup(page, 'html.parser')
 result = soup.find_all('description') 
